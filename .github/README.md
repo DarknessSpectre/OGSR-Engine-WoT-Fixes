@@ -65,10 +65,10 @@ XML. Это правка позволяет отобразить не станд
 
 ## Сборка и перенос исправлений
 
-1. Получите исходники ветки `wot-3.586-fixes`:
+1. Получите исходники ветки `main_cop_cs_wot_fixes`:
 
    ```console
-   git clone --branch wot-fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT.git
+   git clone --branch main_cop_cs_wot_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT.git
    ```
 
 2. Запустите `Update_Components.cmd`, чтобы получить зависимости движка.
