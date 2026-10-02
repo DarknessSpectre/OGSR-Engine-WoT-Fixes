@@ -56,7 +56,7 @@ XML. Эта правка добавляет отображение физиче�
 1. Получите исходники ветки `main_cop_cs_wot_fixes`:
 
    ```console
-   git clone --branch main_cop_cs_wot_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT-Fixes.git
+   git clone --branch main_cop_cs_wot_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT-SP-Fixes.git
    ```
 
 2. Запустите `Update_Components.cmd`, чтобы получить зависимости движка.
