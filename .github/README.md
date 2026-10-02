@@ -77,5 +77,3 @@ XML. Это правка позволяет отобразить не станд
    Используемые инструменты сборки задаются в `OgsrBuildProps.props`:
    v143 для Visual Studio 2022, v145 для Visual Studio 2026.
 4. Соберите решение. Результат находится в `bin_x64`.
-* [ENHANCED SHADERS AND COLOR GRADING](https://www.moddb.com/mods/stalker-anomaly/addons/enhanced-shaders-and-color-grading-for-151)
-* [Shader 3D Scopes](https://www.moddb.com/mods/stalker-anomaly/addons/shader-3d-scopes)
