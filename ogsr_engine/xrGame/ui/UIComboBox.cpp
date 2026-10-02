@@ -7,6 +7,25 @@
 
 #define CB_HEIGHT 20.0f
 
+// OpenAL supplies UTF-8 names; the legacy game UI uses Windows-1251.
+// Convert only the visible label, preserving the original console token.
+static xr_string SoundDeviceDisplayName(LPCSTR name)
+{
+    const int wide_size = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, name, -1, nullptr, 0);
+    if (!wide_size)
+        return name;
+    xr_vector<wchar_t> wide(wide_size);
+    if (!MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, name, -1, wide.data(), wide_size))
+        return name;
+    const int size = WideCharToMultiByte(1251, 0, wide.data(), -1, nullptr, 0, nullptr, nullptr);
+    if (!size)
+        return name;
+    xr_vector<char> bytes(size);
+    if (!WideCharToMultiByte(1251, 0, wide.data(), -1, bytes.data(), size, nullptr, nullptr))
+        return name;
+    return bytes.data();
+}
+
 CUIComboBox::CUIComboBox()
 {
     AttachChild(&m_frameLine);
@@ -136,16 +155,17 @@ void CUIComboBox::SetCurrentOptValue()
     {
         if (m_disabled.end() == std::find(m_disabled.begin(), m_disabled.end(), tok->id))
         {
-            CUIListBoxItem* itm = AddItem_(tok->name, tok->id);
+            const xr_string label = m_entry == "snd_device" ? SoundDeviceDisplayName(tok->name) : xr_string(tok->name);
+            CUIListBoxItem* itm = AddItem_(label.c_str(), tok->id);
             if (itm && !IsOptTokenEnabled(tok->id))
                 itm->Enable(false);
         }
         tok++;
     }
 
-    LPCSTR cur_val = *CStringTable().translate(GetOptTokenValue());
-    m_text.SetText(cur_val);
-    m_list_box.SetSelectedText(cur_val);
+    const xr_string cur_val = m_entry == "snd_device" ? SoundDeviceDisplayName(GetOptTokenValue()) : xr_string(*CStringTable().translate(GetOptTokenValue()));
+    m_text.SetText(cur_val.c_str());
+    m_list_box.SetSelectedText(cur_val.c_str());
 
     CUIListBoxItem* itm = m_list_box.GetSelectedItem();
     if (itm)
