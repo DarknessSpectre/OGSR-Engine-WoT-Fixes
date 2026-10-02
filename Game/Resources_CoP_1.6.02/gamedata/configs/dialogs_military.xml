@@ -1,0 +1,3997 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes" ?>
+<game_dialogs>
+    <dialog id="mil_b51_reznik_4_dialog">
+        <has_info>mil_b52_too_late</has_info>
+        <dont_has_info>mil_b52_actor_angry</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_b51_reznik_4_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b52_actor_angry</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b51_reznik_4_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b51_reznik_4_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b51_reznik_4_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b51_reznik_4_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b51_reznik_4_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_tehnik_order_1_done">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <has_info>mil_tenhik_actor_orderer_item_1</has_info>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text />
+                <has_info>mil_tenhik_actor_orderer_item_1_1</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="1111">
+                <text>mil_tehnik_order_1_done_1111</text>
+            </phrase>
+            <phrase id="1112">
+                <text>mil_tehnik_order_1_done_1112</text>
+            </phrase>
+            <phrase id="1113">
+                <text>mil_tehnik_order_1_done_1113</text>
+            </phrase>
+            <phrase id="1114">
+                <text>mil_tehnik_order_1_done_1114</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_tehnik_order_1_done_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="111">
+                <text>mil_tehnik_order_1_done_111</text>
+                <next>1111</next>
+                <next>1112</next>
+                <next>1113</next>
+                <next>1114</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_tehnik_order_1_dialog">
+        <phrase_list>
+            <phrase id="33">
+                <text>mil_tehnik_order_1_dialog_33</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_tehnik_order_1_dialog_32</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="43">
+                <text>mil_tehnik_order_1_dialog_43</text>
+            </phrase>
+            <phrase id="42">
+                <text>mil_tehnik_order_1_dialog_42</text>
+            </phrase>
+            <phrase id="35">
+                <text>mil_tehnik_order_1_dialog_35</text>
+                <next>36</next>
+            </phrase>
+            <phrase id="37">
+                <text>mil_tehnik_order_1_dialog_37</text>
+                <next>38</next>
+            </phrase>
+            <phrase id="36">
+                <text>mil_tehnik_order_1_dialog_36</text>
+            </phrase>
+            <phrase id="38">
+                <text>mil_tehnik_order_1_dialog_38</text>
+            </phrase>
+            <phrase id="50">
+                <text>mil_tehnik_order_1_dialog_50</text>
+                <next>501</next>
+            </phrase>
+            <phrase id="41">
+                <text>mil_tehnik_order_1_dialog_41</text>
+            </phrase>
+            <phrase id="31">
+                <text>mil_tehnik_order_1_dialog_31</text>
+                <precondition>dialogs_rostok.actor_has_700_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_700_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_1</give_info>
+                <next>41</next>
+            </phrase>
+            <phrase id="39">
+                <text>mil_tehnik_order_1_dialog_39</text>
+                <precondition>dialogs_rostok.actor_has_2000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_2000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_2</give_info>
+                <next>40</next>
+            </phrase>
+            <phrase id="40">
+                <text>mil_tehnik_order_1_dialog_40</text>
+            </phrase>
+            <phrase id="501">
+                <text>mil_tehnik_order_1_dialog_501</text>
+            </phrase>
+            <phrase id="51">
+                <text>mil_tehnik_order_1_dialog_51</text>
+                <next>52</next>
+            </phrase>
+            <phrase id="52">
+                <text>mil_tehnik_order_1_dialog_52</text>
+            </phrase>
+            <phrase id="56">
+                <text>mil_tehnik_order_1_dialog_56</text>
+            </phrase>
+            <phrase id="57">
+                <text>mil_tehnik_order_1_dialog_57</text>
+                <next>58</next>
+            </phrase>
+            <phrase id="58">
+                <text>mil_tehnik_order_1_dialog_58</text>
+            </phrase>
+            <phrase id="54">
+                <text>mil_tehnik_order_1_dialog_54</text>
+            </phrase>
+            <phrase id="24">
+                <text>mil_tehnik_order_1_dialog_24</text>
+                <has_info>mil_tehnik_order_refused</has_info>
+                <next>53</next>
+                <next>55</next>
+                <next>57</next>
+            </phrase>
+            <phrase id="55">
+                <text>mil_tehnik_order_1_dialog_55</text>
+                <next>56</next>
+            </phrase>
+            <phrase id="53">
+                <text>mil_tehnik_order_1_dialog_53</text>
+                <precondition>dialogs_rostok.actor_has_4000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_4000</action>
+                <give_info>mil_tenhik_actor_orderer_item_2</give_info>
+                <next>54</next>
+            </phrase>
+            <phrase id="59">
+                <text>mil_tehnik_order_1_dialog_59</text>
+                <precondition>dialogs_rostok.actor_has_4000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_4000</action>
+                <give_info>mil_tenhik_actor_orderer_item_3</give_info>
+                <next>60</next>
+            </phrase>
+            <phrase id="60">
+                <text>mil_tehnik_order_1_dialog_60</text>
+            </phrase>
+            <phrase id="61">
+                <text>mil_tehnik_order_1_dialog_61</text>
+                <next>62</next>
+            </phrase>
+            <phrase id="62">
+                <text>mil_tehnik_order_1_dialog_62</text>
+            </phrase>
+            <phrase id="63">
+                <text>mil_tehnik_order_1_dialog_63</text>
+                <next>64</next>
+            </phrase>
+            <phrase id="64">
+                <text>mil_tehnik_order_1_dialog_64</text>
+            </phrase>
+            <phrase id="65">
+                <text>mil_tehnik_order_1_dialog_65</text>
+                <precondition>dialogs_rostok.actor_has_8000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_8000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_3</give_info>
+                <next>66</next>
+            </phrase>
+            <phrase id="66">
+                <text>mil_tehnik_order_1_dialog_66</text>
+            </phrase>
+            <phrase id="67">
+                <text>mil_tehnik_order_1_dialog_67</text>
+                <next>68</next>
+            </phrase>
+            <phrase id="68">
+                <text>mil_tehnik_order_1_dialog_68</text>
+            </phrase>
+            <phrase id="69">
+                <text>mil_tehnik_order_1_dialog_69</text>
+                <next>70</next>
+            </phrase>
+            <phrase id="70">
+                <text>mil_tehnik_order_1_dialog_70</text>
+            </phrase>
+            <phrase id="26">
+                <text>mil_tehnik_order_1_dialog_26</text>
+                <has_info>mil_tehnik_order_refused</has_info>
+                <next>65</next>
+                <next>67</next>
+                <next>69</next>
+            </phrase>
+            <phrase id="71">
+                <text>mil_tehnik_order_1_dialog_71</text>
+                <precondition>dialogs_rostok.actor_has_4000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_4000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_4</give_info>
+                <next>72</next>
+            </phrase>
+            <phrase id="72">
+                <text>mil_tehnik_order_1_dialog_72</text>
+            </phrase>
+            <phrase id="73">
+                <text>mil_tehnik_order_1_dialog_73</text>
+                <next>74</next>
+            </phrase>
+            <phrase id="74">
+                <text>mil_tehnik_order_1_dialog_74</text>
+            </phrase>
+            <phrase id="75">
+                <text>mil_tehnik_order_1_dialog_75</text>
+                <next>76</next>
+            </phrase>
+            <phrase id="76">
+                <text>mil_tehnik_order_1_dialog_76</text>
+            </phrase>
+            <phrase id="28">
+                <text>mil_tehnik_order_1_dialog_28</text>
+                <has_info>mil_tehnik_order_refused</has_info>
+                <next>77</next>
+                <next>79</next>
+                <next>81</next>
+            </phrase>
+            <phrase id="77">
+                <text>mil_tehnik_order_1_dialog_77</text>
+                <precondition>dialogs_rostok.actor_has_8000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_8000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_4</give_info>
+                <next>78</next>
+            </phrase>
+            <phrase id="78">
+                <text>mil_tehnik_order_1_dialog_78</text>
+            </phrase>
+            <phrase id="79">
+                <text>mil_tehnik_order_1_dialog_79</text>
+                <next>80</next>
+            </phrase>
+            <phrase id="80">
+                <text>mil_tehnik_order_1_dialog_80</text>
+            </phrase>
+            <phrase id="81">
+                <text>mil_tehnik_order_1_dialog_81</text>
+                <next>82</next>
+            </phrase>
+            <phrase id="82">
+                <text>mil_tehnik_order_1_dialog_82</text>
+            </phrase>
+            <phrase id="84">
+                <text>mil_tehnik_order_1_dialog_84</text>
+            </phrase>
+            <phrase id="85">
+                <text>mil_tehnik_order_1_dialog_85</text>
+                <next>86</next>
+            </phrase>
+            <phrase id="86">
+                <text>mil_tehnik_order_1_dialog_86</text>
+            </phrase>
+            <phrase id="88">
+                <text>mil_tehnik_order_1_dialog_88</text>
+            </phrase>
+            <phrase id="87">
+                <text>mil_tehnik_order_1_dialog_87</text>
+                <next>88</next>
+            </phrase>
+            <phrase id="90">
+                <text>mil_tehnik_order_1_dialog_90</text>
+            </phrase>
+            <phrase id="91">
+                <text>mil_tehnik_order_1_dialog_91</text>
+                <next>92</next>
+            </phrase>
+            <phrase id="92">
+                <text>mil_tehnik_order_1_dialog_92</text>
+            </phrase>
+            <phrase id="93">
+                <text>mil_tehnik_order_1_dialog_93</text>
+                <next>94</next>
+            </phrase>
+            <phrase id="94">
+                <text>mil_tehnik_order_1_dialog_94</text>
+            </phrase>
+            <phrase id="16">
+                <text>mil_tehnik_order_1_dialog_16</text>
+                <next>111</next>
+                <next>112</next>
+            </phrase>
+            <phrase id="30">
+                <text>mil_tehnik_order_1_dialog_30</text>
+                <next>89</next>
+                <next>91</next>
+                <next>93</next>
+            </phrase>
+            <phrase id="89">
+                <text>mil_tehnik_order_1_dialog_89</text>
+                <precondition>dialogs_rostok.actor_has_14000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_14000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_5</give_info>
+                <next>90</next>
+            </phrase>
+            <phrase id="83">
+                <text>mil_tehnik_order_1_dialog_83</text>
+                <precondition>dialogs_rostok.actor_has_8000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_8000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_5</give_info>
+                <next>84</next>
+            </phrase>
+            <phrase id="15">
+                <text>mil_tehnik_order_1_dialog_15</text>
+                <next>29</next>
+                <next>30</next>
+            </phrase>
+            <phrase id="14">
+                <text>mil_tehnik_order_1_dialog_14</text>
+                <next>27</next>
+                <next>28</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_tehnik_order_1_dialog_13</text>
+                <next>25</next>
+                <next>26</next>
+            </phrase>
+            <phrase id="12">
+                <text>mil_tehnik_order_1_dialog_12</text>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="101">
+                <text>mil_tehnik_order_1_dialog_101</text>
+                <precondition>dialogs_rostok.actor_has_32000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_32000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_6</give_info>
+                <next>102</next>
+            </phrase>
+            <phrase id="96">
+                <text>mil_tehnik_order_1_dialog_96</text>
+            </phrase>
+            <phrase id="102">
+                <text>mil_tehnik_order_1_dialog_102</text>
+            </phrase>
+            <phrase id="97">
+                <text>mil_tehnik_order_1_dialog_97</text>
+                <next>98</next>
+            </phrase>
+            <phrase id="103">
+                <text>mil_tehnik_order_1_dialog_103</text>
+                <next>104</next>
+            </phrase>
+            <phrase id="98">
+                <text>mil_tehnik_order_1_dialog_98</text>
+            </phrase>
+            <phrase id="104">
+                <text>mil_tehnik_order_1_dialog_104</text>
+            </phrase>
+            <phrase id="99">
+                <text>mil_tehnik_order_1_dialog_99</text>
+                <next>100</next>
+            </phrase>
+            <phrase id="105">
+                <text>mil_tehnik_order_1_dialog_105</text>
+                <next>106</next>
+            </phrase>
+            <phrase id="100">
+                <text>mil_tehnik_order_1_dialog_100</text>
+            </phrase>
+            <phrase id="106">
+                <text>mil_tehnik_order_1_dialog_106</text>
+            </phrase>
+            <phrase id="17">
+                <text>mil_tehnik_order_1_dialog_17</text>
+            </phrase>
+            <phrase id="23">
+                <text>mil_tehnik_order_1_dialog_23</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>39</next>
+                <next>50</next>
+                <next>51</next>
+            </phrase>
+            <phrase id="25">
+                <text>mil_tehnik_order_1_dialog_25</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>59</next>
+                <next>61</next>
+                <next>63</next>
+            </phrase>
+            <phrase id="27">
+                <text>mil_tehnik_order_1_dialog_27</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>71</next>
+                <next>73</next>
+                <next>75</next>
+            </phrase>
+            <phrase id="29">
+                <text>mil_tehnik_order_1_dialog_29</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>83</next>
+                <next>85</next>
+                <next>87</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_tehnik_order_1_dialog_11</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_tehnik_order_1_dialog_21</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+            </phrase>
+            <phrase id="22">
+                <text>mil_tehnik_order_1_dialog_22</text>
+                <has_info>mil_tehnik_order_refused</has_info>
+                <next>34</next>
+                <next>35</next>
+                <next>37</next>
+            </phrase>
+            <phrase id="44">
+                <text>mil_tehnik_order_1_dialog_44</text>
+            </phrase>
+            <phrase id="34">
+                <text>mil_tehnik_order_1_dialog_34</text>
+                <precondition>dialogs_rostok.actor_has_1400_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_1400_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_1</give_info>
+                <next>44</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_tehnik_order_1_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_tehnik_order_1_dialog_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="112">
+                <text>mil_tehnik_order_1_dialog_112</text>
+                <next>101</next>
+                <next>103</next>
+                <next>105</next>
+            </phrase>
+            <phrase id="111">
+                <text>mil_tehnik_order_1_dialog_111</text>
+                <dont_has_info>mil_tahnik_order_refused</dont_has_info>
+                <next>95</next>
+                <next>97</next>
+                <next>99</next>
+            </phrase>
+            <phrase id="95">
+                <text>mil_tehnik_order_1_dialog_95</text>
+                <precondition>dialogs_rostok.actor_has_20000_money</precondition>
+                <action>dialogs_rostok.transfer_deneg_20000_from</action>
+                <give_info>mil_tenhik_actor_orderer_item_6</give_info>
+                <next>96</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_tehnik_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>mil_b202_tehnik_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b202_tehnik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_tehnik_dialog_1</text>
+                <give_info>mil_b202_tehnik_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_sinyak_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>mil_b202_sinyak_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b202_sinyak_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_sinyak_dialog_1</text>
+                <give_info>mil_b202_sinyak_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_start">
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_a666_dialog_start_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a666_dialog_start_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_a666_dialog_start_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a666_dialog_start_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_start_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_a666_dialog_start_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a666_dialog_start_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a666_dialog_start_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_a666_dialog_start_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>rost_a666_go_away</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b51_reznik_dialog">
+        <has_info>mil_b49_ohota_3_done</has_info>
+        <dont_has_info>mil_b52_actor_angry</dont_has_info>
+        <phrase_list>
+            <phrase id="32">
+                <text>mil_b51_reznik_dialog_32</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b51_reznik_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b52_actor_angry</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b51_reznik_dialog_5</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b51_reznik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b51_reznik_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b51_reznik_dialog_2</text>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_b51_reznik_dialog_31</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b51_reznik_dialog_4</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b51_reznik_dialog_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b52_actor_angry</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_lukash_dialog_1">
+        <has_info>mil_lukash_sent_sms</has_info>
+        <has_info>mil_a7_lukash_dialog_done</has_info>
+        <dont_has_info>mil_b67_lukash_dialog_1_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b67_lukash_dialog_1_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b67_lukash_dialog_1_4</text>
+                <action>dialogs_military.give_task_b67</action>
+                <give_info>mil_b67_lukash_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b67_lukash_dialog_1_3</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b67_lukash_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b67_lukash_dialog_1_2</text>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_sv_drunk_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_sv_drunk_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_sv_trader_start">
+        <phrase_list>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text />
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_sv_trader_start_2</text>
+                <dont_has_info>sv_trader_greeted_actor</dont_has_info>
+                <give_info>sv_trader_greeted_actor</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_sv_trader_start_3</text>
+                <has_info>sv_trader_greeted_actor</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_sv_cook_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_sv_cook_dialog_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a10_payalnik_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_a10_payalnik_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a19_cap_dialog_1">
+        <has_info>mil_a19_activate_cap</has_info>
+        <dont_has_info>mil_a19_cap_dialog_1_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_a19_cap_dialog_1_0</text>
+                <give_info>mil_a19_actor_talked_to_cap</give_info>
+                <give_info>mil_a19_ready_to_spawn_monolith</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a19_cap_dialog_1_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_a19_cap_dialog_1_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_max_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>mil_b202_max_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b202_max_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_max_dialog_1</text>
+                <give_info>mil_b202_max_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_medik_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>mil_b202_medik_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b202_medik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_medik_dialog_1</text>
+                <give_info>mil_b202_medik_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_trader_dialog">
+        <has_info>mil_b210_task_b210_done</has_info>
+        <dont_has_info>mil_b202_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b202_trader_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b202_trader_dialog_3</text>
+                <action>dialogs_military.give_task_b202</action>
+                <give_info>mil_b202_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b202_trader_dialog_0</text>
+                <give_info>mil_b202_0_task_done</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_trader_dialog_1</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_trader_found_pda_dialog">
+        <precondition>dialogs_military.actor_has_vano_pda</precondition>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b202_trader_found_pda_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b202_trader_found_pda_dialog_1</text>
+                <action>dialogs_military.transfer_b202_vano_pda</action>
+                <give_info>mil_b202_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_1">
+        <dont_has_info>mil_b210_actor_talked_to_max</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b210_max_dialog_1_3</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b210_max_dialog_1_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b210_max_dialog_1_4</text>
+                <action>dialogs_military.give_task_b210</action>
+                <give_info>mil_b210_actor_talked_to_max</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b210_max_dialog_1_1</text>
+                <give_info>mil_b210_actor_asked_about_deal</give_info>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_2">
+        <has_info>mil_b210_actor_asked_about_deal</has_info>
+        <dont_has_info>mil_b210_actor_talked_to_max</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b210_max_dialog_2_1</text>
+                <action>dialogs_military.give_task_b210</action>
+                <give_info>mil_b210_actor_talked_to_max</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_start_1">
+        <dont_has_info>mil_b210_actor_talked_to_max</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_start_1_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_start_2">
+        <has_info>mil_b210_actor_talked_to_max</has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_start_2_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b36_actor_got_toolkit_1">
+        <has_info>mil_b36_task_given</has_info>
+        <dont_has_info>military_tech_got_all_tools</dont_has_info>
+        <phrase_list>
+            <phrase id="14">
+                <text>mil_b36_actor_got_toolkit_1_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="15">
+                <text>mil_b36_actor_got_toolkit_1_15</text>
+            </phrase>
+            <phrase id="32">
+                <text>mil_b36_actor_got_toolkit_1_32</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_1</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="41">
+                <text>mil_b36_actor_got_toolkit_1_41</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_1</dont_has_info>
+                <dont_has_info>tenhik_svoboda_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="42">
+                <text>mil_b36_actor_got_toolkit_1_42</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_1</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="43">
+                <text>mil_b36_actor_got_toolkit_1_43</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="22">
+                <text>mil_b36_actor_got_toolkit_1_22</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_2</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+            </phrase>
+            <phrase id="23">
+                <text>mil_b36_actor_got_toolkit_1_23</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b36_actor_got_toolkit_1_12</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_2</precondition>
+                <action>dialogs_rostok.transfer_toolkit_2</action>
+                <action>dialogs_military.transfer_deneg_to_actor_1500</action>
+                <give_info>tenhik_svoboda_got_toolkit_2</give_info>
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_b36_actor_got_toolkit_1_13</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_3</precondition>
+                <action>dialogs_rostok.transfer_toolkit_3</action>
+                <action>dialogs_military.transfer_deneg_to_actor_2000</action>
+                <give_info>tenhik_svoboda_got_toolkit_3</give_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="33">
+                <text>mil_b36_actor_got_toolkit_1_33</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b36_actor_got_toolkit_1_1</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_b36_actor_got_toolkit_1_21</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_2</dont_has_info>
+                <dont_has_info>tenhik_svoboda_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b36_actor_got_toolkit_1_11</text>
+                <precondition>dialogs_rostok.actor_got_toolkit_1</precondition>
+                <action>dialogs_rostok.transfer_toolkit_1</action>
+                <action>dialogs_military.transfer_deneg_to_actor_1000</action>
+                <give_info>tenhik_svoboda_got_toolkit_1</give_info>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_b36_actor_got_toolkit_1_31</text>
+                <dont_has_info>tenhik_svoboda_got_toolkit_1</dont_has_info>
+                <dont_has_info>tenhik_svoboda_got_toolkit_3</dont_has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+            </phrase>
+            <phrase id="24">
+                <text>mil_b36_actor_got_toolkit_1_24</text>
+                <give_info>military_tech_got_all_tools</give_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="34">
+                <text>mil_b36_actor_got_toolkit_1_34</text>
+                <give_info>military_tech_got_all_tools</give_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="44">
+                <text>mil_b36_actor_got_toolkit_1_44</text>
+                <give_info>military_tech_got_all_tools</give_info>
+                <has_info>tenhik_svoboda_got_toolkit_1</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_2</has_info>
+                <has_info>tenhik_svoboda_got_toolkit_3</has_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b36_actor_got_toolkit_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b36_mechanic_instruments_dialog">
+        <dont_has_info>mil_b36_task_given</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b36_mechanic_instruments_dialog_1</text>
+                <action>dialogs_military.give_task_b36</action>
+                <give_info>mil_b36_task_given</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b36_mechanic_instruments_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b47_drel_1_dialog">
+        <has_info>rost_b47_messages_received</has_info>
+        <dont_has_info>mil_v47_drel_1_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b47_drel_1_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b47_drel_1_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b47_drel_1_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b47_drel_1_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b47_drel_1_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b47_drel_1_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b47_drel_1_dialog_6</text>
+                <give_info>mil_b47_drel_1_talked</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b47_drel_1_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_v47_drel_1_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b47_drel_2_dialog">
+        <has_info>rost_b47_actor_got_pda</has_info>
+        <dont_has_info>mil_b47_drel_angry_now</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b47_drel_2_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b47_drel_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b47_drel_2_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b47_drel_2_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b47_drel_2_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b47_drel_2_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b47_drel_angry_now</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b47_ohrannik_dialog">
+        <phrase_list>
+            <phrase id="131">
+                <text>mil_b47_ohrannik_dialog_131</text>
+                <next>132</next>
+            </phrase>
+            <phrase id="132">
+                <text>mil_b47_ohrannik_dialog_132</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b47_ohrannik_go_way</give_info>
+            </phrase>
+            <phrase id="122">
+                <text>mil_b47_ohrannik_dialog_122</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="121">
+                <text>mil_b47_ohrannik_dialog_121</text>
+                <next>122</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b47_ohrannik_dialog_0</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b47_ohrannik_dialog_12</text>
+                <next>121</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_b47_ohrannik_dialog_13</text>
+                <dont_has_info>mil_b47_ohrannik_go_way</dont_has_info>
+                <has_info>rost_b110_actor_got_info_osvedomitel</has_info>
+                <next>131</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b47_ohrannik_dialog_11</text>
+                <dont_has_info>mil_b37_go_way</dont_has_info>
+                <has_info>rost_b47_messages_received</has_info>
+                <next>111</next>
+            </phrase>
+            <phrase id="111">
+                <text>mil_b47_ohrannik_dialog_111</text>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>mil_b47_ohrannik_dialog_112</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b47_ohrannik_go_way</give_info>
+                <give_info>mil_b37_go_way</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b49_ohota_2_dialog_begin">
+        <has_info>mil_b49_1_done</has_info>
+        <dont_has_info>mil_b49_ohota_2_dialog_begin_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b49_ohota_2_dialog_begin_3</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b49_ohota_2_dialog_begin_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b49_ohota_2_dialog_begin_1</text>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b49_ohota_2_dialog_begin_2</text>
+                <action>dialogs_military.give_task_b49_2</action>
+                <give_info>mil_b49_ohota_2_dialog_begin_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b49_ohota_2_dialog_finish">
+        <has_info>mil_b80_bloodsucker_1_dead</has_info>
+        <has_info>mil_b80_bloodsucker_2_dead</has_info>
+        <has_info>mil_b80_bloodsucker_3_dead</has_info>
+        <has_info>mil_b49_ohota_2_dialog_begin_done</has_info>
+        <dont_has_info>mil_b49_ohota_2_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b49_ohota_2_dialog_finish_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b49_ohota_2_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b49_ohota_2_dialog_finish_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b49_ohota_2_dialog_finish_1</text>
+                <action>dialogs_military.transfer_reward_b49_2</action>
+                <give_info>mil_b49_ohota_2_task_done</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b49_ohota_3_dialog_begin">
+        <has_info>mil_b49_ohota_2_task_done</has_info>
+        <dont_has_info>mil_b49_ohota_3_dialog_begin_done</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_b49_ohota_3_dialog_begin_5</text>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b49_ohota_3_dialog_begin_2</text>
+                <action>dialogs_military.give_task_b49_ohota_3</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b49_ohota_3_dialog_begin_3</text>
+                <give_info>mil_b49_ohota_3_dialog_begin_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b49_ohota_3_dialog_begin_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b49_ohota_3_dialog_begin_1</text>
+                <next>2</next>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b49_ohota_3_dialog_finish">
+        <has_info>mil_b49_chimera_1_died</has_info>
+        <has_info>mil_b49_chimera_2_died</has_info>
+        <dont_has_info>mil_b49_all_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b49_ohota_3_dialog_finish_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b49_ohota_3_dialog_finish_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b49_all_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b49_ohota_3_dialog_finish_1</text>
+                <action>dialogs_military.transfer_reward_b49_3</action>
+                <give_info>mil_b49_ohota_3_done</give_info>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b50_ohota_1_begin_dialog">
+        <dont_has_info>mil_b49_ohota_1_begin_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="12">
+                <text>mil_b50_ohota_1_begin_dialog_12</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="111">
+                <text>mil_b50_ohota_1_begin_dialog_111</text>
+                <action>dialogs_military.give_task_b49_1</action>
+                <next>112</next>
+            </phrase>
+            <phrase id="112">
+                <text>mil_b50_ohota_1_begin_dialog_112</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b49_ohota_1_begin_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b50_ohota_1_begin_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b50_ohota_1_begin_dialog_1</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b50_ohota_1_begin_dialog_11</text>
+                <next>111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b50_1_finish_dialog">
+        <has_info>mil_b49_boar_1_dead</has_info>
+        <has_info>mil_b49_boar_3_dead</has_info>
+        <has_info>mil_b49_dog_2_dead</has_info>
+        <has_info>mil_b49_ohota_1_begin_dialog_done</has_info>
+        <dont_has_info>mil_b49_dialog_1_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b50_1_finish_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b49_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b50_1_finish_dialog_1</text>
+                <action>dialogs_military.transfer_money_49_ohota_1</action>
+                <give_info>mil_b49_1_done</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b50_1_finish_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b51_diodor_dialog">
+        <has_info>rost_b51_actor_gave_task</has_info>
+        <dont_has_info>rost_b51_actor_talked_to_diodor</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_b51_diodor_dialog_5</text>
+                <action>dialogs_military.transfer_b51_art</action>
+                <give_info>rost_b51_actor_talked_to_diodor</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b51_diodor_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b51_diodor_dialog_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b51_diodor_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b51_diodor_dialog_1</text>
+                <next>2</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b51_diodor_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_b51_diodor_dialog_13</text>
+                <give_info>mil_b51_actor_angry</give_info>
+            </phrase>
+            <phrase id="41">
+                <text>mil_b51_diodor_dialog_41</text>
+                <give_info>mil_b51_actor_angry</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b51_diodor_dialog_12</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b51_predatel_dialog">
+        <has_info>rost_b51_actor_gave_task</has_info>
+        <dont_has_info>mil_b51_predatel_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b51_predatel_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b51_predatel_dialog_1</text>
+                <next>2</next>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_b51_predatel_dialog_21</text>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b51_predatel_dialog_3</text>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b51_predatel_dialog_2</text>
+                <give_info>mil_b51_predatel_talked</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b51_reznik_3_dialog">
+        <has_info>mil_b51_reznik_2_dialog_done</has_info>
+        <dont_has_info>mil_b51_reznik_3_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="22">
+                <text>mil_b51_reznik_3_dialog_22</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="23">
+                <text>mil_b51_reznik_3_dialog_23</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="24">
+                <text>mil_b51_reznik_3_dialog_24</text>
+                <next>25</next>
+                <next>26</next>
+            </phrase>
+            <phrase id="26">
+                <text>mil_b51_reznik_3_dialog_26</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="25">
+                <text>mil_b51_reznik_3_dialog_25</text>
+                <next>27</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_b51_reznik_3_dialog_32</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b51_reznik_3_dialog_3</text>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_b51_reznik_3_dialog_31</text>
+                <next>34</next>
+            </phrase>
+            <phrase id="35">
+                <text>mil_b51_reznik_3_dialog_35</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b52_actor_angry</give_info>
+            </phrase>
+            <phrase id="33">
+                <text>mil_b51_reznik_3_dialog_33</text>
+            </phrase>
+            <phrase id="34">
+                <text>mil_b51_reznik_3_dialog_34</text>
+                <next>35</next>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b51_reznik_3_dialog_12</text>
+                <dont_has_info>rost_b15_suicide_tolknul</dont_has_info>
+                <dont_has_info>rost_b15_bad_killing</dont_has_info>
+                <has_info>rost_b15_actor_met_him_done</has_info>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_b51_reznik_3_dialog_21</text>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="28">
+                <text>mil_b51_reznik_3_dialog_28</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b51_reznik_3_dialog_done</give_info>
+            </phrase>
+            <phrase id="27">
+                <text>mil_b51_reznik_3_dialog_27</text>
+                <give_info>mil_b51_found_otmaza</give_info>
+                <next>28</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_b51_reznik_3_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b51_reznik_3_dialog_11</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b51_reznik_3_dialog_0</text>
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b51_reznik_2_dialog">
+        <has_info>rost_b51_task_done</has_info>
+        <dont_has_info>mil_b51_reznik_2_dialog_done</dont_has_info>
+        <dont_has_info>mi_b51_reznik_is_unpleased</dont_has_info>
+        <dont_has_info>mil_b49_ohota_3_done</dont_has_info>
+        <phrase_list>
+            <phrase id="25">
+                <text>mil_b51_reznik_2_dialog_25</text>
+                <next>26</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b51_reznik_2_dialog_11</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b51_reznik_2_dialog_2</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_b51_reznik_2_dialog_21</text>
+                <next>25</next>
+            </phrase>
+            <phrase id="22">
+                <text>mil_b51_reznik_2_dialog_22</text>
+                <next>23</next>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b51_reznik_2_dialog_12</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b51_reznik_2_dialog_3</text>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_b51_reznik_2_dialog_31</text>
+                <next>33</next>
+            </phrase>
+            <phrase id="26">
+                <text>mil_b51_reznik_2_dialog_26</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b52_actor_angry</give_info>
+            </phrase>
+            <phrase id="23">
+                <text>mil_b51_reznik_2_dialog_23</text>
+                <next>24</next>
+            </phrase>
+            <phrase id="24">
+                <text>mil_b51_reznik_2_dialog_24</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mi_b51_reznik_is_unpleased</give_info>
+            </phrase>
+            <phrase id="34">
+                <text>mil_b51_reznik_2_dialog_34</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b51_reznik_2_dialog_done</give_info>
+            </phrase>
+            <phrase id="33">
+                <text>mil_b51_reznik_2_dialog_33</text>
+                <action>dialogs_military.give_task_b52</action>
+                <give_info>mil_b52_actor_lied</give_info>
+                <next>34</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_b51_reznik_2_dialog_32</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mi_b51_reznik_is_unpleased</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b51_reznik_2_dialog_0</text>
+                <next>11</next>
+                <next>12</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_kaska_2_dialog">
+        <has_info>rost_b66_lukash_talked</has_info>
+        <dont_has_info>mil_b66_kaska_2_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b66_kaska_2_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_kaska_2_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_kaska_2_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_kaska_2_dialog_6</text>
+                <give_info>mil_b66_kaska_2_talked</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_kaska_2_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_kaska_2_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_kaska_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_kaska_2_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_kaska_2_dialog_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_sv_boltovnya_max_dialog">
+        <phrase_list>
+            <phrase id="34">
+                <text>mil_sv_boltovnya_max_dialog_34</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_sv_boltovnya_max_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_sv_boltovnya_max_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>33</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_sv_boltovnya_max_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="41">
+                <text>mil_sv_boltovnya_max_dialog_41</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_sv_boltovnya_max_dialog_32</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="42">
+                <text>mil_sv_boltovnya_max_dialog_42</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="33">
+                <text>mil_sv_boltovnya_max_dialog_33</text>
+                <next>43</next>
+            </phrase>
+            <phrase id="43">
+                <text>mil_sv_boltovnya_max_dialog_43</text>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_surge_end_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_surge_end_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_surge_end_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_surge_end_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_surge_end_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_surge_end_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_merc_exo_tech_dialog">
+        <precondition>dialogs_rostok.actor_got_cepa_flash</precondition>
+        <dont_has_info>tech_gave_info_about_exo</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_merc_exo_tech_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_merc_exo_tech_dialog_1</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_medic_dialog">
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_medic_dialog_4</text>
+                <precondition>dialogs.actor_is_damn_healthy</precondition>
+            </phrase>
+            <phrase id="0">
+                <text>mil_medic_dialog_0</text>
+                <next>1</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_medic_dialog_1</text>
+                <precondition>dialogs.actor_needs_bless</precondition>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_medic_dialog_2</text>
+                <action>dialogs.medic_magic_potion</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_medic_dialog_3</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_medc_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_medc_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b70_lukash_dialog">
+        <precondition>dialogs_military.actor_got_b70_pda</precondition>
+        <has_info>mil_b67_lukash_disapointed</has_info>
+        <dont_has_info>mil_b70_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b70_lukash_dialog_1</text>
+                <action>dialogs_military.transfer_b70</action>
+                <give_info>mil_b70_task_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b70_lukash_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_lukash_dialog_4">
+        <has_info>mil_b67_ara_killed_coward_not_found</has_info>
+        <dont_has_info>mil_b67_lukash_disapointed</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b67_lukash_dialog_4_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b67_lukash_dialog_4_1</text>
+                <action>dialogs_military.give_task_b70</action>
+                <give_info>mil_b67_lukash_disapointed</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_lukash_dialog_3">
+        <has_info>mil_b67_pavlik_dead_good</has_info>
+        <dont_has_info>mil_b67_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b67_lukash_dialog_3_1</text>
+                <action>dialogs_military.mil_lukash_gives_tainik</action>
+                <action>dialogs_military.transfer_b67</action>
+                <give_info>mil_b67_task_done</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b67_lukash_dialog_3_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b67_lukash_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_lukash_dialog_2">
+        <has_info>mil_b67_return_to_lukash</has_info>
+        <dont_has_info>mil_b67_pavlik_dead_good</dont_has_info>
+        <dont_has_info>mil_b67_lukash_dialog_2_done</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_b67_lukash_dialog_2_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b67_lukash_dialog_2_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b67_lukash_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b67_lukash_dialog_2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b67_lukash_dialog_2_3</text>
+                <action>dialogs_military.give_task_b70</action>
+                <give_info>mil_b67_lukash_disapointed</give_info>
+                <next>4</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b67_lukash_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_ara_dialog_2">
+        <has_info>mil_b67_pavlik_dead_good</has_info>
+        <dont_has_info>mil_a19_ara_dialog_2_done</dont_has_info>
+        <dont_has_info>mil_b67_ara_go_to_koster</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b67_ara_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b67_ara_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b67_ara_dialog_2_2</text>
+                <action>dialogs_military.mil_ara_gives_tainik</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b67_ara_dialog_2_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_a19_ara_dialog_2_done</give_info>
+                <give_info>mil_b67_ara_go_to_koster</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b67_ara_dialog">
+        <has_info>mil_b67_actor_saw_ara_hands_up</has_info>
+        <dont_has_info>mil_b67_ara_go_to_koster</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b67_ara_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b67_ara_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b67_ara_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b67_ara_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b67_ara_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b67_ara_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b67_ara_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b67_ara_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b67_ara_go_to_koster</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sv_drunk_nesi_vodka_dialog">
+        <has_info>mil_b66_sv_drunk_has_no_vodka</has_info>
+        <dont_has_info>mil_b66_drunk_has_vodka</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b66_sv_drunk_nesi_vodka_dialog_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_sv_drunk_nesi_vodka_dialog_1</text>
+                <precondition>dialogs_military.actor_got_vodka</precondition>
+                <give_info>mil_b66_sv_drunk_take_dose</give_info>
+                <give_info>mil_b66_sv_drunk_take_first_dose</give_info>
+                <give_info>mil_b66_drunk_has_vodka</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sv_drunk_nesi_vodka_dialog_2</text>
+                <action>actor_break_dialog</action>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_lukash_1_dialog">
+        <has_info>mil_b66_sniper_talked</has_info>
+        <dont_has_info>mil_b66_lukash_1_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="6">
+                <text>mil_b66_lukash_1_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_lukash_1_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b66_lukash_1_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>mil_b66_lukash_1_dialog_9</text>
+                <give_info>rost_b66_lukash_talked</give_info>
+                <give_info>mil_b66_lukash_1_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_lukash_1_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_lukash_1_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_lukash_1_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_lukash_1_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_lukash_1_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_lukash_1_dialog_5</text>
+                <next>6</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b202_cap_dialog">
+        <has_info>mil_b202_dialog_done</has_info>
+        <dont_has_info>mil_b202_cap_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b202_cap_dialog_1</text>
+                <give_info>mil_b202_cap_talked</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b202_cap_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a19_monolith_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_a19_monolith_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a19_monolith_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a19_monolith_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a19_monolith_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a19_monolith_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_a19_monolith_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_a19_monolith_talked</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_4">
+        <precondition>dialogs_military.actor_got_b210_case</precondition>
+        <has_info>mil_b210_crazy_dead</has_info>
+        <dont_has_info>mil_b210_actor_asked_about_deal</dont_has_info>
+        <dont_has_info>mil_b210_actor_brought_case_before</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b210_max_dialog_4_2</text>
+                <action>dialogs_military.transfer_b210_case</action>
+                <next>3</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b210_max_dialog_4_5</text>
+                <give_info>mil_b210_actor_brought_case_before</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b210_max_dialog_4_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b210_max_dialog_4_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b210_max_dialog_4_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_4_0</text>
+                <give_info>mil_b210_actor_asked_about_deal</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b210_max_dialog_3">
+        <precondition>dialogs_military.actor_got_b210_case</precondition>
+        <has_info>mil_b210_crazy_dead</has_info>
+        <has_info>mil_b210_actor_talked_to_max</has_info>
+        <dont_has_info>mil_b210_task_b210_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b210_max_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b210_max_dialog_3_1</text>
+                <action>dialogs_military.transfer_b210_case</action>
+                <give_info>mil_b210_max_got_case</give_info>
+                <give_info>mil_b210_task_b210_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="rost_b109_gosha_dialog">
+        <phrase_list>
+            <phrase id="21">
+                <text>rost_b109_gosha_dialog_21</text>
+                <next>211</next>
+            </phrase>
+            <phrase id="211">
+                <text>rost_b109_gosha_dialog_211</text>
+                <give_info>mil_b109_actor_talked_to_gosha</give_info>
+                <next>212</next>
+            </phrase>
+            <phrase id="212">
+                <text>rost_b109_gosha_dialog_212</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b109_gosha_talked</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>rost_b109_gosha_dialog_22</text>
+                <action>dialogs_military.transfer_b109_art</action>
+                <next>221</next>
+            </phrase>
+            <phrase id="221">
+                <text>rost_b109_gosha_dialog_221</text>
+                <give_info>mil_b109_actor_talked_to_gosha</give_info>
+                <next>222</next>
+            </phrase>
+            <phrase id="222">
+                <text>rost_b109_gosha_dialog_222</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b109_gosha_talked</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>rost_b109_gosha_dialog_2</text>
+                <next>21</next>
+                <next>22</next>
+            </phrase>
+            <phrase id="1">
+                <text>rost_b109_gosha_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>rost_b109_gosha_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b109_neutral_stalker_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b109_neutral_stalker_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b109_neutral_stalker_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b109_neutral_stalker_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b109_neutral_stalker_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b109_neutral_stalker_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b109_neutral_stalker_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b109_neutral_stalker_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b109_neutral_stalker_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b109_neutral_stalker_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>mil_b109_neutral_stalker_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>mil_b109_neutral_stalker_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b109_neutral_stalker_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>mil_b109_neutral_stalker_dialog_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>mil_b109_neutral_stalker_dialog_13</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b109_neutral_stalker_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sniper_dialog">
+        <has_info>mil_b66_kaska_talked</has_info>
+        <dont_has_info>mil_b66_sniper_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b66_sniper_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sniper_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_sniper_dialog_3</text>
+                <give_info>mil_b66_sniper_talked</give_info>
+                <give_info>mil_b66_sniper_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_sniper_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sv_drunk_dialog">
+        <has_info>mil_b66_kaska_2_talked</has_info>
+        <dont_has_info>mil_b66_sv_drunk_dialog_1_done</dont_has_info>
+        <phrase_list>
+            <phrase id="111">
+                <text>mil_b66_sv_drunk_dialog_111</text>
+                <next>1112</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sv_drunk_dialog_2</text>
+                <precondition>dialogs_military.actor_got_vodka</precondition>
+                <action>dialogs_military.b66_transfer_vodka</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_sv_drunk_take_first_dose</give_info>
+                <give_info>mil_b66_sv_drunk_take_dose</give_info>
+                <give_info>mil_b66_sv_drunk_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="1112">
+                <text>mil_b66_sv_drunk_dialog_1112</text>
+                <next>1113</next>
+            </phrase>
+            <phrase id="1113">
+                <text>mil_b66_sv_drunk_dialog_1113</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_sv_drunk_has_no_vodka</give_info>
+                <give_info>mil_b66_sv_drunk_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_sv_drunk_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_sv_drunk_dialog_1</text>
+                <next>2</next>
+                <next>111</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sv_drunk_2_dialog">
+        <has_info>mil_b66_sv_drunk_take_first_dose</has_info>
+        <dont_has_info>mil_b66_sv_drunk_take_second_dose</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_b66_sv_drunk_2_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_sv_drunk_2_dialog_3</text>
+                <precondition>dialogs_military.actor_got_vodka</precondition>
+                <action>dialogs_military.b66_transfer_vodka</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_sv_drunk_take_dose</give_info>
+                <give_info>mil_b66_sv_drunk_take_second_dose</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_sv_drunk_2_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_sv_drunk_2_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sv_drunk_2_dialog_2</text>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sv_drunk_3_dialog">
+        <has_info>mil_b66_sv_drunk_take_second_dose</has_info>
+        <dont_has_info>mil_b66_sv_drunk_take_third_dose</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b66_sv_drunk_3_dialog_3</text>
+                <precondition>dialogs_military.actor_got_vodka</precondition>
+                <action>dialogs_military.b66_transfer_vodka</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_sv_drunk_take_dose</give_info>
+                <give_info>mil_b66_sv_drunk_take_third_dose</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_sv_drunk_3_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_sv_drunk_3_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_sv_drunk_3_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sv_drunk_3_dialog_2</text>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_sv_drunk_4_dialog">
+        <has_info>mil_b66_sv_drunk_take_third_dose</has_info>
+        <dont_has_info>mil_b66_all_drunk_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_b66_sv_drunk_4_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_sv_drunk_4_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_sv_drunk_4_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_sv_drunk_4_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_sv_drunk_4_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_sv_drunk_4_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_sv_drunk_4_dialog_6</text>
+                <give_info>mil_b66_drunk_talked_all</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_sv_drunk_4_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_all_drunk_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c1_stranger_dialog">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c1_stranger_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c1_stranger_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c1_stranger_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c1_stranger_dialog_3</text>
+                <action>dialogs_military.give_task_c1</action>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c1_stranger_met</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c1_u_vhoda_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_c1_u_vhoda_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c1_u_vhoda_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_c1_u_vhoda_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_c1_u_vhoda_dialog_5</text>
+                <action>dialogs_military.transfer_c1</action>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_c1_u_vhoda_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_c1_u_vhoda_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c1_coordinates_of_treasure_gotten</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c1_u_vhoda_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c1_u_vhoda_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c1_stranger_dialog_3">
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_c1_stranger_dialog_3_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c1_actor_is_ambushed</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c1_stranger_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c1_stranger_dialog_2">
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_c1_stranger_dialog_2_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c1_task_reversed</give_info>
+                <give_info>mil_c1_dialogs_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c1_stranger_dialog_2_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_c1_stranger_dialog_2_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c1_go_to_night_shift</give_info>
+                <give_info>mil_c1_dialogs_done</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>mil_c1_stranger_dialog_2_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c1_stranger_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c1_stranger_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c1_stranger_dialog_2_2</text>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b110_drel_dialog">
+        <dont_has_info>mil_b110_actor_got_wpn</dont_has_info>
+        <phrase_list>
+            <phrase id="421">
+                <text>mil_b110_drel_dialog_421</text>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_actor_got_wpn</give_info>
+            </phrase>
+            <phrase id="44">
+                <text>mil_b110_drel_dialog_44</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b110_actor_is_angry</give_info>
+            </phrase>
+            <phrase id="4313">
+                <text>mil_b110_drel_dialog_4313</text>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_actor_got_wpn</give_info>
+            </phrase>
+            <phrase id="341">
+                <text>mil_b110_drel_dialog_341</text>
+                <give_info>mil_b110_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="432">
+                <text>mil_b110_drel_dialog_432</text>
+                <precondition>dialogs_military.mil_b110_proverka_wpn_false</precondition>
+                <give_info>mil_b110_actor_prigrozil</give_info>
+                <give_info>mil_b110_proverka_failed</give_info>
+                <next>41</next>
+                <next>42</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="1111">
+                <text>mil_b110_drel_dialog_1111</text>
+                <has_info>mil_b110_actor_prigrozil</has_info>
+                <has_info>mil_b110_proverka_failed</has_info>
+                <next>51</next>
+                <next>52</next>
+                <next>53</next>
+            </phrase>
+            <phrase id="521">
+                <text>mil_b110_drel_dialog_521</text>
+            </phrase>
+            <phrase id="422">
+                <text>mil_b110_drel_dialog_422</text>
+            </phrase>
+            <phrase id="53">
+                <text>mil_b110_drel_dialog_53</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b110_actor_is_angry</give_info>
+            </phrase>
+            <phrase id="11">
+                <text>mil_b110_drel_dialog_11</text>
+                <has_info>mil_b110_drel_scared</has_info>
+                <has_info>mil_b110_actor_prigrozil</has_info>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_b110_drel_dialog_21</text>
+                <precondition>dialogs_military.actor_has_10000_money</precondition>
+                <action>dialogs_military.transfer_deneg_10000</action>
+                <give_info>mil_b110_actor_sent_10000</give_info>
+                <next>211</next>
+            </phrase>
+            <phrase id="211">
+                <text>mil_b110_drel_dialog_211</text>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_actor_got_wpn</give_info>
+            </phrase>
+            <phrase id="22">
+                <text>mil_b110_drel_dialog_22</text>
+                <next>221</next>
+            </phrase>
+            <phrase id="221">
+                <text>mil_b110_drel_dialog_221</text>
+            </phrase>
+            <phrase id="23">
+                <text>mil_b110_drel_dialog_23</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b110_actor_is_angry</give_info>
+            </phrase>
+            <phrase id="111">
+                <text>mil_b110_drel_dialog_111</text>
+                <dont_has_info>mil_b110_actor_prigrozil</dont_has_info>
+                <has_info>mil_b110_dialog_1_done</has_info>
+                <next>41</next>
+                <next>42</next>
+                <next>43</next>
+                <next>44</next>
+            </phrase>
+            <phrase id="41">
+                <text>mil_b110_drel_dialog_41</text>
+                <precondition>dialogs_military.actor_has_15000_money</precondition>
+                <action>dialogs_military.transfer_deneg_15000</action>
+                <give_info>mil_b110_actor_sent_15000</give_info>
+                <next>421</next>
+            </phrase>
+            <phrase id="42">
+                <text>mil_b110_drel_dialog_42</text>
+                <next>422</next>
+            </phrase>
+            <phrase id="43">
+                <text>mil_b110_drel_dialog_43</text>
+                <dont_has_info>mil_b110_actor_prigrozil</dont_has_info>
+                <next>431</next>
+                <next>432</next>
+            </phrase>
+            <phrase id="431">
+                <text>mil_b110_drel_dialog_431</text>
+                <precondition>dialogs_military.mil_b110_proverka_wpn</precondition>
+                <give_info>mil_b110_drel_scared</give_info>
+                <give_info>mil_b110_actor_prigrozil</give_info>
+                <next>42</next>
+                <next>44</next>
+                <next>4312</next>
+            </phrase>
+            <phrase id="4312">
+                <text>mil_b110_drel_dialog_4312</text>
+                <precondition>dialogs_military.actor_has_10000_money</precondition>
+                <action>dialogs_military.transfer_deneg_10000</action>
+                <give_info>mil_b110_actor_sent_10000</give_info>
+                <next>4313</next>
+            </phrase>
+            <phrase id="511">
+                <text>mil_b110_drel_dialog_511</text>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_actor_got_wpn</give_info>
+            </phrase>
+            <phrase id="51">
+                <text>mil_b110_drel_dialog_51</text>
+                <precondition>dialogs_military.actor_has_17000_money</precondition>
+                <action>dialogs_military.transfer_deneg_17000</action>
+                <give_info>mil_b110_actor_sent_17000</give_info>
+                <next>511</next>
+            </phrase>
+            <phrase id="52">
+                <text>mil_b110_drel_dialog_52</text>
+                <next>521</next>
+            </phrase>
+            <phrase id="322">
+                <text>mil_b110_drel_dialog_322</text>
+                <precondition>dialogs_military.mil_b110_proverka_wpn_false</precondition>
+                <give_info>mil_b110_actor_prigrozil</give_info>
+                <give_info>mil_b110_proverka_failed</give_info>
+                <next>51</next>
+                <next>52</next>
+                <next>53</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b110_drel_dialog_1</text>
+                <dont_has_info>mil_b110_dialog_1_done</dont_has_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b110_drel_dialog_2</text>
+                <give_info>mil_b110_dialog_1_done</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b110_drel_dialog_3</text>
+                <next>31</next>
+                <next>32</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b110_drel_dialog_0</text>
+                <dont_has_info>mil_b110_actor_got_wpn</dont_has_info>
+                <next>1</next>
+                <next>11</next>
+                <next>111</next>
+                <next>1111</next>
+            </phrase>
+            <phrase id="311">
+                <text>mil_b110_drel_dialog_311</text>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_actor_got_wpn</give_info>
+            </phrase>
+            <phrase id="31">
+                <text>mil_b110_drel_dialog_31</text>
+                <precondition>dialogs_military.actor_has_15000_money</precondition>
+                <action>dialogs_military.transfer_deneg_15000</action>
+                <give_info>mil_b110_actor_sent_15000</give_info>
+                <next>311</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_b110_drel_dialog_32</text>
+                <dont_has_info>mil_b110_actor_prigrozil</dont_has_info>
+                <next>321</next>
+                <next>322</next>
+            </phrase>
+            <phrase id="321">
+                <text>mil_b110_drel_dialog_321</text>
+                <precondition>dialogs_military.mil_b110_proverka_wpn</precondition>
+                <action>dialogs_military.transfer_b110_wpn</action>
+                <give_info>mil_b110_drel_scared</give_info>
+                <give_info>mil_b110_actor_prigrozil</give_info>
+                <give_info>mil_b110_actor_got_it_free</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_sv_boltovnya_cook_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_sv_boltovnya_cook_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="34">
+                <text>mil_sv_boltovnya_cook_dialog_34</text>
+            </phrase>
+            <phrase id="41">
+                <text>mil_sv_boltovnya_cook_dialog_41</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="42">
+                <text>mil_sv_boltovnya_cook_dialog_42</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text />
+                <next>31</next>
+                <next>32</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_sv_boltovnya_cook_dialog_31</text>
+                <next>41</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_sv_boltovnya_cook_dialog_32</text>
+                <next>42</next>
+            </phrase>
+            <phrase id="2">
+                <text />
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_sv_boltovnya_cook_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_cook_dialog">
+        <has_info>mil_c4_task_reversed</has_info>
+        <dont_has_info>mil_c5_cook_is_traitor</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_c4_cook_dialog_1</text>
+                <give_info>mil_c5_cook_is_traitor</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_cook_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_medic_boltovnya">
+        <phrase_list>
+            <phrase id="24">
+                <text>mil_medic_boltovnya_24</text>
+            </phrase>
+            <phrase id="32">
+                <text>mil_medic_boltovnya_32</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="33">
+                <text>mil_medic_boltovnya_33</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_medic_boltovnya_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_medic_boltovnya_1</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_medic_boltovnya_31</text>
+                <next>21</next>
+                <next>22</next>
+                <next>23</next>
+                <next>24</next>
+            </phrase>
+            <phrase id="23">
+                <text>mil_medic_boltovnya_23</text>
+                <dont_has_info>mil_actor_asked_about_krab</dont_has_info>
+                <give_info>mil_actor_asked_about_krab</give_info>
+                <next>33</next>
+            </phrase>
+            <phrase id="22">
+                <text>mil_medic_boltovnya_22</text>
+                <next>32</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_medic_boltovnya_21</text>
+                <next>31</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_medic_asking_about_krab">
+        <has_info>mil_actor_asked_about_krab</has_info>
+        <has_info>mil_b49_ohota_3_done</has_info>
+        <dont_has_info>mil_medic_gave_final_answer_about_krab</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_medic_asking_about_krab_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_medic_asking_about_krab_1</text>
+                <give_info>mil_medic_gave_final_answer_about_krab</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c5_lukash_dialog_3">
+        <has_info>mil_c5_squad_is_done</has_info>
+        <dont_has_info>mil_c5_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c5_lukash_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c5_lukash_dialog_3_1</text>
+                <give_info>mil_c5_task_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_trader_dialog">
+        <has_info>mil_c4_medician_is_traitor_too</has_info>
+        <dont_has_info>mil_c5_hawaiian_man_is_not_a_traitor</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_c4_trader_dialog_1</text>
+                <give_info>mil_c5_hawaiian_man_is_not_a_traitor</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_trader_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c5_lulash_dialog_2">
+        <has_info>mil_c5_drunkyard_is_agreed</has_info>
+        <dont_has_info>mil_c5_actor_has_to_kill_good_man</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_c5_lulash_dialog_2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c5_lulash_dialog_2_3</text>
+                <give_info>mil_c5_actor_has_to_kill_good_man</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c5_lulash_dialog_2_1</text>
+                <give_info>mil_c5_drunk_is_gone</give_info>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c5_lulash_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_lukah_dialog">
+        <has_info>mil_c4_max_dialog_1_done</has_info>
+        <dont_has_info>mil_c4_task_reversed</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c4_lukah_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_lukah_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c4_lukah_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c4_lukah_dialog_3</text>
+                <give_info>mil_c4_task_reversed</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a10_payalnik_dialog">
+        <has_info>mil_a7_lukash_dialog_done</has_info>
+        <dont_has_info>mil_a10_payalnik_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_a10_payalnik_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a10_payalnik_dialog_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_a10_payalnik_dialog_7</text>
+                <action>dialogs_military.give_task_a10</action>
+                <give_info>mil_a10_actor_knew_about_kalancha</give_info>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_a10_payalnik_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_a10_payalnik_dialog_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a10_payalnik_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a10_payalnik_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a10_payalnik_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a10_payalnik_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a10_payalnik_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a19_lukash_dialog">
+        <has_info>task_disabled</has_info>
+        <dont_has_info>mil_a19_lukash_talked</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_a19_lukash_dialog_2</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a19_lukash_dialog_1</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a19_lukash_dialog_3</text>
+                <action>dialogs_military.give_task_a19</action>
+                <give_info>mil_a19_lukash_talked</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a19_lukash_dialog_0</text>
+                <next>1</next>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_technician_dialog">
+        <has_info>mil_c5_cook_is_traitor</has_info>
+        <dont_has_info>mil_c5_technician_is_not_a_traitor</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c4_technician_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_technician_dialog_1</text>
+                <give_info>mil_c5_technician_is_not_a_traitor</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_medician_dialog">
+        <has_info>mil_c5_technician_is_not_a_traitor</has_info>
+        <dont_has_info>mil_c4_medician_is_traitor_too</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c4_medician_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_medician_dialog_1</text>
+                <give_info>mil_c4_medician_is_traitor_too</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_trooper_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_c4_trooper_dialog_2</text>
+                <give_info>mil_c4_trooper_change_animation</give_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c4_trooper_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c4_trooper_is_angry</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_trooper_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_trooper_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_max_dialog_3">
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_c4_max_dialog_3_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_c4_max_dialog_3_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_c4_max_dialog_3_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_c4_max_dialog_3_6</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_c4_max_dialog_3_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c4_military_is_end</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_max_dialog_3_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_max_dialog_3_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c4_max_dialog_3_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_max_dialog_2">
+        <has_info>mil_c4_max_dialog_1_done</has_info>
+        <dont_has_info>mil_c4_max_set_a_meet</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_c4_max_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c4_max_dialog_2_2</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c4_max_set_a_meet</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_max_dialog_2_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c6_ecolog_dialog_2">
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_c6_ecolog_dialog_2_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>cit_c6_dialog_was_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c6_ecolog_dialog_2_0</text>
+                <give_info>cit_c6_ecolog_saw_us</give_info>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c6_ecolog_dialog_1">
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_c6_ecolog_dialog_1_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c6_ecolog_dialog_1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c6_ecolog_dialog_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_c6_ecolog_dialog_1_4</text>
+                <next>5</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c6_ecolog_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_c6_ecolog_dialog_1_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>cit_c6_change_work</give_info>
+                <give_info>cit_c6_task_is_not_started</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>mil_c6_ecolog_dialog_1_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>cit_c6_task_started</give_info>
+                <give_info>cit_c6_change_work</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_max_dialog_1">
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_c4_max_dialog_1_3</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c4_max_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_max_dialog_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c4_max_dialog_1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_max_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="cit_c4_max_dialog_2">
+        <phrase_list>
+            <phrase id="0">
+                <text>cit_c4_max_dialog_2_0</text>
+                <action>dialogs_rostok.transfer_deneg_6000</action>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>cit_c4_max_dialog_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="3">
+                <text>cit_c4_max_dialog_2_3</text>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs_military.give_task_c6</action>
+                <give_info>cit_c6_open_door</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>cit_c4_max_dialog_2_2</text>
+                <give_info>cit_c4_you_ought_to_search_dat_fuckin_place</give_info>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_kaska_dialog">
+        <dont_has_info>mil_b66_kaska_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="1">
+                <text>mil_b66_kaska_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_kaska_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_kaska_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_kaska_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_kaska_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_kaska_dialog_6</text>
+                <give_info>mil_b66_kaska_talked</give_info>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b66_kaska_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>mil_b66_kaska_dialog_9</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_kaska_dialog_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_kaska_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_kaska_dialog_7</text>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="cit_zombied_dialog">
+        <phrase_list>
+            <phrase id="1">
+                <text>cit_zombied_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>cit_zombied_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>cit_zombied_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>cit_zombied_dialog_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>cit_zombied_dialog_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>cit_zombied_dialog_6</text>
+                <next>7</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>cit_zombied_dialog_8</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="7">
+                <text>cit_zombied_dialog_7</text>
+                <precondition>dialogs.actor_have_food</precondition>
+                <action>dialogs.transfer_food</action>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>cit_zombied_dialog_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>cit_zombied_dialog_10</text>
+                <next>11</next>
+            </phrase>
+            <phrase id="11">
+                <text>cit_zombied_dialog_11</text>
+                <next>12</next>
+            </phrase>
+            <phrase id="12">
+                <text>cit_zombied_dialog_12</text>
+                <next>13</next>
+            </phrase>
+            <phrase id="13">
+                <text>cit_zombied_dialog_13</text>
+                <next>14</next>
+            </phrase>
+            <phrase id="14">
+                <text>cit_zombied_dialog_14</text>
+                <next>15</next>
+            </phrase>
+            <phrase id="0">
+                <text>cit_zombied_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="15">
+                <text>cit_zombied_dialog_15</text>
+                <next>16</next>
+            </phrase>
+            <phrase id="16">
+                <text>cit_zombied_dialog_16</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>cit_zombied_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_kaska_3_dialog">
+        <has_info>mil_b66_drunk_talked_all</has_info>
+        <dont_has_info>mil_b66_kaska_3_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b66_kaska_3_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_kaska_3_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_kaska_3_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_kaska_3_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_kaska_3_dialog_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_kaska_3_dialog_done</give_info>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_kaska_3_dialog_4</text>
+                <give_info>mil_b66_kaska_3_talked</give_info>
+                <action>dialogs_military.transfer_svoboda_light_outfit</action>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_tehnik_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_tehnik_start_11</text>
+                <dont_has_info>mil_tehnik_intro</dont_has_info>
+                <give_info>mil_tehnik_intro</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>mil_tehnik_start_12</text>
+                <dont_has_info>zat_b51_order_in_process</dont_has_info>
+                <has_info>mil_tehnik_intro</has_info>
+            </phrase>
+            <phrase id="13">
+                <text>mil_tehnik_start_13</text>
+                <dont_has_info>zat_b51_order_ready_task</dont_has_info>
+                <has_info>zat_b51_order_in_process</has_info>
+            </phrase>
+            <phrase id="14">
+                <text>mil_tehnik_start_14</text>
+                <has_info>zat_b51_order_ready_task</has_info>
+                <has_info>zat_b51_order_in_process</has_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_kaska_4_dialog">
+        <has_info>mil_b66_actor_got_merc_pda</has_info>
+        <dont_has_info>mil_b66_military_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_b66_kaska_4_dialog_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_kaska_4_dialog_4</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_military_done</give_info>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_kaska_4_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_kaska_4_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_kaska_4_dialog_1</text>
+                <action>dialogs_military.transfer_kpk_to_kaska</action>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c4_max_final_dialog">
+        <precondition>dialogs_military.actor_got_c4_note</precondition>
+        <dont_has_info>mil_c4_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_c4_max_final_dialog_3</text>
+            </phrase>
+            <phrase id="5">
+                <text>mil_c4_max_final_dialog_5</text>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c4_max_final_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c4_max_final_dialog_1</text>
+                <action>dialogs_military.transfer_c4_not_to_max</action>
+                <action>dialogs_military.transfer_af_star_phantom</action>
+                <give_info>mil_c4_task_done</give_info>
+                <next>2</next>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c4_max_final_dialog_2</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_c4_max_final_dialog_4</text>
+                <action>dialogs_military.transfer_af_star_phantom2</action>
+                <next>5</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c8_technician_dialog">
+        <has_info>rost_c8_task_is_started</has_info>
+        <dont_has_info>mil_c8_task_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_c8_technician_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_c8_technician_dialog_3</text>
+                <give_info>mil_c8_task_done</give_info>
+                <action>dialogs_military.transfer_pb_and_ammo</action>
+            </phrase>
+            <phrase id="0">
+                <text>mil_c8_technician_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c8_technician_dialog_1</text>
+                <action>dialogs_military.transfer_c8_to_screw</action>
+                <next>2</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_know">
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_a666_dialog_know_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="71">
+                <text>mil_a666_dialog_know_71</text>
+                <next>72</next>
+            </phrase>
+            <phrase id="72">
+                <text>mil_a666_dialog_know_72</text>
+                <next>73</next>
+            </phrase>
+            <phrase id="73">
+                <text>mil_a666_dialog_know_73</text>
+                <next>74</next>
+            </phrase>
+            <phrase id="74">
+                <text>mil_a666_dialog_know_74</text>
+                <next>75</next>
+            </phrase>
+            <phrase id="75">
+                <text>mil_a666_dialog_know_75</text>
+                <next>76</next>
+            </phrase>
+            <phrase id="76">
+                <text>mil_a666_dialog_know_76</text>
+                <next>77</next>
+            </phrase>
+            <phrase id="77">
+                <text>mil_a666_dialog_know_77</text>
+                <next>78</next>
+            </phrase>
+            <phrase id="78">
+                <text>mil_a666_dialog_know_78</text>
+                <next>79</next>
+            </phrase>
+            <phrase id="79">
+                <text>mil_a666_dialog_know_79</text>
+                <next>80</next>
+            </phrase>
+            <phrase id="80">
+                <text>mil_a666_dialog_know_80</text>
+                <next>81</next>
+            </phrase>
+            <phrase id="81">
+                <text>mil_a666_dialog_know_81</text>
+                <next>82</next>
+            </phrase>
+            <phrase id="82">
+                <text>mil_a666_dialog_know_82</text>
+                <next>83</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a666_dialog_know_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="83">
+                <text>mil_a666_dialog_know_83</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a666_dialog_know_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_know_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a666_dialog_know_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a666_dialog_know_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a666_dialog_know_6</text>
+                <next>71</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_know_1">
+        <phrase_list>
+            <phrase id="3">
+                <text>mil_a666_dialog_know_1_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a666_dialog_know_1_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_a666_dialog_know_1_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_a666_dialog_know_1_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_a666_dialog_know_1_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>mil_a666_dialog_know_1_9</text>
+                <next>10</next>
+            </phrase>
+            <phrase id="10">
+                <text>mil_a666_dialog_know_1_10</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a666_dialog_know_1_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_know_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a666_dialog_know_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a666_dialog_know_1_6</text>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_know_2">
+        <phrase_list>
+            <phrase id="41">
+                <text>mil_a666_dialog_know_2_41</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="5">
+                <text>mil_a666_dialog_know_2_5</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_a666_dialog_know_2_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_a666_dialog_know_2_8</text>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_know_2_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a666_dialog_know_2_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a666_dialog_know_2_3</text>
+                <next>4</next>
+                <next>41</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a666_dialog_know_2_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a666_dialog_know_2_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a666_dialog_know_2_6</text>
+                <next>7</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_know_3">
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_a666_dialog_know_3_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a666_dialog_know_3_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_a666_dialog_know_3_4</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_know_3_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a666_dialog_know_3_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a666_dialog_unknown">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_a666_dialog_unknown_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a666_dialog_unknown_1</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a19_cap_dialog_2">
+        <has_info>mil_a19_monolith_talked</has_info>
+        <dont_has_info>mil_a19_cap_all_done</dont_has_info>
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_a19_cap_dialog_2_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a19_cap_dialog_2_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_a19_cap_dialog_2_5</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_a19_cap_all_done</give_info>
+                <give_info>mil_a19_task_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_a19_cap_dialog_2_0</text>
+                <give_info>mil_a19_start_shooting</give_info>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a19_cap_dialog_2_1</text>
+                <next>2</next>
+                <next>6</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_a19_cap_dialog_2_6</text>
+                <has_info>mil_c5_task_done</has_info>
+                <next>3</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a19_cap_dialog_2_2</text>
+                <next>3</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c5_lukash_dialog_1">
+        <has_info>mil_c5_hawaiian_man_is_not_a_traitor</has_info>
+        <dont_has_info>mil_c5_actor_knows_about_samoghon</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c5_lukash_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_c5_lukash_dialog_1_1</text>
+                <give_info>mil_c5_actor_knows_about_samoghon</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_c5_drunken_dialog">
+        <has_info>mil_c5_actor_knows_about_samoghon</has_info>
+        <dont_has_info>mil_c5_drunkyard_is_agreed</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_c5_drunken_dialog_0</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_c5_drunken_dialog_2</text>
+                <give_info>mil_c5_drunkyard_is_agreed</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_entrancer_dialog_0">
+        <has_info>mil_b66_kaska_3_talked</has_info>
+        <dont_has_info>mil_c66_entrancer_dialog_0_done</dont_has_info>
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b66_entrancer_dialog_0_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_entrancer_dialog_0_3</text>
+                <next>4</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_entrancer_dialog_0_4</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_entrancer_dialog_0_1</text>
+                <precondition>dialogs_military.mil_b66_active_freedom_outfit</precondition>
+                <next>2</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_entrancer_dialog_0_6</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_c66_entrancer_dialog_0_done</give_info>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_entrancer_dialog_0_5</text>
+                <give_info>mil_c66_entrancer_was_attracted</give_info>
+                <next>6</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_entrancer_dialog_0_0</text>
+                <next>1</next>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_entrancer_dialog_0_7</text>
+                <precondition>dialogs_military.mil_b66_inactive_freedom_outfit</precondition>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_arsenal_dialog">
+        <phrase_list>
+            <phrase id="2">
+                <text>mil_b66_arsenal_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_arsenal_dialog_3</text>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="4">
+                <text>mil_b66_arsenal_dialog_4</text>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_arsenal_dialog_5</text>
+                <has_info>mil_c66_entrancer_was_attracted</has_info>
+                <next>6</next>
+                <next>8</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_arsenal_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_arsenal_dialog_0</text>
+                <next>1</next>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_arsenal_dialog_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_change_security</give_info>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_arsenal_dialog_6</text>
+                <precondition>dialogs_military.mil_b66_active_freedom_outfit</precondition>
+                <action>dialogs_military.transfer_mil_b66_pda_case_key</action>
+                <next>7</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b66_arsenal_dialog_8</text>
+                <precondition>dialogs_military.mil_b66_inactive_freedom_outfit</precondition>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_entrancer_dialog_1">
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_b66_entrancer_dialog_1_4</text>
+                <next>6</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b66_entrancer_dialog_1_8</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_actor_was_chased</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_entrancer_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_entrancer_dialog_1_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_entrancer_dialog_1_2</text>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_entrancer_dialog_1_7</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_actor_was_chased</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_entrancer_dialog_1_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_entrancer_dialog_1_5</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_b66_entrancer_dialog_1_6</text>
+                <next>8</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_lukash_start">
+        <phrase_list>
+            <phrase id="1">
+                <text />
+                <next>11</next>
+                <next>12</next>
+                <next>13</next>
+                <next>14</next>
+                <next>15</next>
+            </phrase>
+            <phrase id="11">
+                <text>mil_lukash_start_11</text>
+                <dont_has_info>mil_lukash_intro</dont_has_info>
+                <give_info>mil_lukash_intro</give_info>
+            </phrase>
+            <phrase id="12">
+                <text>mil_lukash_start_12</text>
+            </phrase>
+            <phrase id="13">
+                <text>mil_lukash_start_13</text>
+                <dont_has_info>mil_b67_lukash_too_late</dont_has_info>
+                <give_info>mil_b67_give_intro_info</give_info>
+                <has_info>mil_b67_lukash_wanted</has_info>
+            </phrase>
+            <phrase id="14">
+                <text>mil_lukash_start_14</text>
+                <has_info>mil_b67_lukash_too_late</has_info>
+            </phrase>
+            <phrase id="15">
+                <text>mil_lukash_start_15</text>
+                <dont_has_info>mil_b67_lukash_dialog_1_done</dont_has_info>
+                <has_info>mil_b210_max_got_case</has_info>
+            </phrase>
+            <phrase id="0">
+                <text />
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_diodor_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_diodor_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_b66_max_dialog">
+        <phrase_list>
+            <phrase id="4">
+                <text>mil_b66_max_dialog_4</text>
+                <next>7</next>
+            </phrase>
+            <phrase id="7">
+                <text>mil_b66_max_dialog_7</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="10">
+                <text>mil_b66_max_dialog_10</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>mil_b66_max_dialog_done</give_info>
+            </phrase>
+            <phrase id="3">
+                <text>mil_b66_max_dialog_3</text>
+                <next>5</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_b66_max_dialog_2</text>
+                <next>3</next>
+                <next>4</next>
+            </phrase>
+            <phrase id="5">
+                <text>mil_b66_max_dialog_5</text>
+                <next>8</next>
+            </phrase>
+            <phrase id="8">
+                <text>mil_b66_max_dialog_8</text>
+                <next>9</next>
+            </phrase>
+            <phrase id="9">
+                <text>mil_b66_max_dialog_9</text>
+                <action>dialogs_military.transfer_kpk_to_kaska</action>
+                <next>10</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_b66_max_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_b66_max_dialog_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_a7_lukash_dialog">
+        <has_info>mil_surge_end</has_info>
+        <dont_has_info>mil_a7_lukash_dialog_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_a7_lukash_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_a7_lukash_dialog_1</text>
+                <next>2</next>
+            </phrase>
+            <phrase id="2">
+                <text>mil_a7_lukash_dialog_2</text>
+                <next>3</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_a7_lukash_dialog_3</text>
+                <action>dialogs_military.give_task_a10_0</action>
+                <give_info>mil_a7_lukash_dialog_done</give_info>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_guido_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_guido_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_guido_dialog">
+        <phrase_list>
+            <phrase id="5">
+                <text>mil_guido_dialog_5</text>
+            </phrase>
+            <phrase id="9">
+                <text>mil_guido_dialog_9</text>
+            </phrase>
+            <phrase id="7">
+                <text>mil_guido_dialog_7</text>
+                <next>8</next>
+                <next>9</next>
+            </phrase>
+            <phrase id="3">
+                <text>mil_guido_dialog_3</text>
+                <next>4</next>
+                <next>5</next>
+            </phrase>
+            <phrase id="4">
+                <text>mil_guido_dialog_4</text>
+                <action>dialogs.transfer_money_from_actor_3200</action>
+                <action>dialogs.jump_to_lim</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="13">
+                <text>mil_guido_dialog_13</text>
+            </phrase>
+            <phrase id="11">
+                <text>mil_guido_dialog_11</text>
+                <next>12</next>
+                <next>13</next>
+            </phrase>
+            <phrase id="15">
+                <text>mil_guido_dialog_15</text>
+                <next>16</next>
+                <next>17</next>
+            </phrase>
+            <phrase id="17">
+                <text>mil_guido_dialog_17</text>
+            </phrase>
+            <phrase id="16">
+                <text>mil_guido_dialog_16</text>
+                <action>dialogs.transfer_money_from_actor_2000</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_red_koper</action>
+            </phrase>
+            <phrase id="12">
+                <text>mil_guido_dialog_12</text>
+                <action>dialogs.transfer_money_from_actor_1500</action>
+                <action>dialogs.jump_to_red_bridge</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="8">
+                <text>mil_guido_dialog_8</text>
+                <action>dialogs.jump_to_yantar</action>
+                <action>dialogs.transfer_money_from_actor_2300</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="19">
+                <text>mil_guido_dialog_19</text>
+                <next>20</next>
+                <next>21</next>
+            </phrase>
+            <phrase id="21">
+                <text>mil_guido_dialog_21</text>
+            </phrase>
+            <phrase id="24">
+                <text>mil_guido_dialog_24</text>
+                <action>dialogs.transfer_money_from_actor_500</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_radar_south</action>
+            </phrase>
+            <phrase id="20">
+                <text>mil_guido_dialog_20</text>
+                <action>dialogs.transfer_money_from_actor_1800</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_red_simbiont</action>
+            </phrase>
+            <phrase id="25">
+                <text>mil_guido_dialog_25</text>
+            </phrase>
+            <phrase id="14">
+                <text>mil_guido_dialog_14</text>
+                <precondition>dialogs.actor_has_2000_money</precondition>
+                <next>15</next>
+            </phrase>
+            <phrase id="10">
+                <text>mil_guido_dialog_10</text>
+                <precondition>dialogs.actor_has_1500_money</precondition>
+                <next>11</next>
+            </phrase>
+            <phrase id="6">
+                <text>mil_guido_dialog_6</text>
+                <precondition>dialogs.actor_has_2300_money</precondition>
+                <next>7</next>
+            </phrase>
+            <phrase id="29">
+                <text>mil_guido_dialog_29</text>
+            </phrase>
+            <phrase id="28">
+                <text>mil_guido_dialog_28</text>
+                <action>dialogs.dialogs.transfer_money_from_actor_1500</action>
+                <action>dialogs.jump_to_radar_east</action>
+                <action>dialogs.break_dialog</action>
+            </phrase>
+            <phrase id="27">
+                <text>mil_guido_dialog_27</text>
+                <next>28</next>
+                <next>29</next>
+            </phrase>
+            <phrase id="23">
+                <text>mil_guido_dialog_23</text>
+                <next>24</next>
+                <next>25</next>
+            </phrase>
+            <phrase id="33">
+                <text>mil_guido_dialog_33</text>
+            </phrase>
+            <phrase id="2">
+                <text>mil_guido_dialog_2</text>
+                <precondition>dialogs.actor_has_3200_money</precondition>
+                <next>3</next>
+            </phrase>
+            <phrase id="0">
+                <text>mil_guido_dialog_0</text>
+                <next>1</next>
+            </phrase>
+            <phrase id="1">
+                <text>mil_guido_dialog_1</text>
+                <next>2</next>
+                <next>6</next>
+                <next>10</next>
+                <next>14</next>
+                <next>18</next>
+                <next>22</next>
+                <next>26</next>
+                <next>30</next>
+                <next>34</next>
+            </phrase>
+            <phrase id="34">
+                <text>mil_guido_dialog_34</text>
+            </phrase>
+            <phrase id="22">
+                <text>mil_guido_dialog_22</text>
+                <precondition>dialogs.actor_has_500_money</precondition>
+                <has_info>rad_c2_info_about_stash_is_gotten</has_info>
+                <next>23</next>
+            </phrase>
+            <phrase id="18">
+                <text>mil_guido_dialog_18</text>
+                <precondition>dialogs.actor_has_1800_money</precondition>
+                <next>19</next>
+            </phrase>
+            <phrase id="31">
+                <text>mil_guido_dialog_31</text>
+                <next>32</next>
+                <next>33</next>
+            </phrase>
+            <phrase id="32">
+                <text>mil_guido_dialog_32</text>
+                <action>dialogs.dialogs.transfer_money_from_actor_500</action>
+                <action>dialogs.break_dialog</action>
+                <action>dialogs.jump_to_agroprom</action>
+            </phrase>
+            <phrase id="30">
+                <text>mil_guido_dialog_30</text>
+                <precondition>dialogs.actor_has_5000_money</precondition>
+                <has_info>agru_b112_actor_got_vydras_message</has_info>
+                <next>31</next>
+            </phrase>
+            <phrase id="26">
+                <text>mil_guido_dialog_26</text>
+                <precondition>dialogs.actor_has_1500_money</precondition>
+                <has_info>rad_c2_info_about_stash_is_gotten</has_info>
+                <next>27</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="cit_c4_max_dialog_1">
+        <phrase_list>
+            <phrase id="1">
+                <text>cit_c4_max_dialog_1_1</text>
+                <action>dialogs.break_dialog</action>
+                <give_info>cit_c4_dialog_1_done</give_info>
+            </phrase>
+            <phrase id="0">
+                <text>cit_c4_max_dialog_1_0</text>
+                <next>1</next>
+            </phrase>
+        </phrase_list>
+    </dialog>
+    <dialog id="mil_drill_start">
+        <phrase_list>
+            <phrase id="0">
+                <text>mil_drill_start_0</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
+</game_dialogs>
