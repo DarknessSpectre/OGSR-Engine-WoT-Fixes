@@ -1,6 +1,6 @@
 # OGSR Engine для Wind of Time
 
-Исправления для адаптации «Ветра времени» на OGSR CoP 3.586.
+Исправления для адаптации «Ветра времени» на OGSR CoP.
 
 ## Добавленные исправления
 
@@ -14,26 +14,7 @@
 
 Файл: [`ogsr_engine/xrGame/ui/UIComboBox.cpp`](../ogsr_engine/xrGame/ui/UIComboBox.cpp).
 
-### 2. Карточка ножа
-
-Для предметов класса `CWeaponKnife` скрыты заголовок, названия, количество
-и иконки боеприпасов. При последующем открытии карточки огнестрельного оружия
-видимость этих элементов восстанавливается. У ножа отображаются его название
-и описание.
-
-Файл: [`ogsr_engine/xrGame/ui/UIWpnParams.cpp`](../ogsr_engine/xrGame/ui/UIWpnParams.cpp).
-
-### 3. Обработка `can_trade`
-
-Исправлено чтение исходного разрешения на торговлю: `m_can_trade` получает
-значение `can_trade`, а флаг подбора отдельно получает `can_take`. Благодаря этому
-предмет с `can_take = true` и `can_trade = false` сохраняет запрет торговли
-после попадания в инвентарь. Исправление применяется ко всем предметам,
-использующим эти параметры.
-
-Файл: [`ogsr_engine/xrGame/inventory_item.cpp`](../ogsr_engine/xrGame/inventory_item.cpp).
-
-### 4. Подсветка скриптовых обвесов
+### 2. Подсветка скриптовых обвесов
 
 Добавлена подсветка совместимых обвесов оружейной системы Wind of Time/Shoker.
 Предмет распознаётся по наличию его секции в `mod_addons_list`. Совместимость
@@ -43,7 +24,7 @@
 
 Файл: [`ogsr_engine/xrGame/ui/UIActorMenu.cpp`](../ogsr_engine/xrGame/ui/UIActorMenu.cpp).
 
-### 5. Физические защиты в карточке артефакта
+### 3. Физические защиты в карточке артефакта
 
 Добавлено отображение четырёх параметров из секции `hit_absorbation_sect`:
 
@@ -57,18 +38,25 @@
 Для каждого параметра создаётся отдельная строка, если соответствующий узел
 присутствует внутри `af_params` в XML интерфейса. Выводятся ненулевые значения.
 Знак, цвет и масштаб задаются штатным `UIArtefactParamItem` и параметрами строки
-XML. Это правка позволяет отобразить не стандартные параметры артефактов, которые в базовой сборке движка не отображаются.
+XML. Эта правка добавляет отображение физических защит артефактов.
 
 Файлы:
 [`ui_af_params.cpp`](../ogsr_engine/xrGame/ui/ui_af_params.cpp),
 [`ui_af_params.h`](../ogsr_engine/xrGame/ui/ui_af_params.h).
+
+Русская подпись «Взрыв» добавлена в
+[`wot_artefact_protection_labels.xml`](../examples/wot/gamedata/configs/text/rus/wot_artefact_protection_labels.xml).
+Для установки перевода скопируйте содержимое `examples/wot` в корень адаптации.
+Для вывода защит в XML интерфейса внутри `af_params` используются узлы
+`strike_immunity`, `wound_immunity`, `explosion_immunity` и `fire_wound_immunity`
+с элементами `caption` и `value`.
 
 ## Сборка и перенос исправлений
 
 1. Получите исходники ветки `main_cop_cs_wot_fixes`:
 
    ```console
-   git clone --branch main_cop_cs_wot_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT.git
+   git clone --branch main_cop_cs_wot_fixes https://github.com/DarknessSpectre/OGSR-Engine-WoT-Fixes.git
    ```
 
 2. Запустите `Update_Components.cmd`, чтобы получить зависимости движка.
