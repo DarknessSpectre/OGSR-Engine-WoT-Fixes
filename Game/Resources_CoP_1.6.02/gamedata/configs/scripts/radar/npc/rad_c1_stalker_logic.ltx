@@ -1,0 +1,363 @@
+[logic@rad_c2_max]
+suitable = {=check_npc_name(rad_c2_max)}
+active = walker@max1
+prior = 200
+post_combat_time = 0, 0
+
+[logic@rad_c2_stalker_1]
+suitable = {=check_npc_name(rad_c2_stalker_1)}
+active = walker@stalker1_1
+prior = 200
+post_combat_time = 0, 0
+
+[logic@rad_c2_stalker_2]
+suitable = {=check_npc_name(rad_c2_stalker_2)}
+active = walker@stalker2_1
+prior = 200
+post_combat_time = 0, 0
+
+[logic@rad_c2_stalker_3]
+suitable = {=check_npc_name(rad_c2_stalker_3)}
+active = walker@stalker3_1
+prior = 200
+post_combat_time = 0, 0
+
+[walker@max1]
+path_walk = max_leader_1_walk
+path_look = max_leader_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_military_squad_is_dead} walker@max2
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@max2]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = max_leader_2_walk
+path_look = max_leader_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_teleport_of_max_squad_is_ready} walker@max3 %=teleport_npc(rad_c2_smart_max_leader_2_walk:rad_c2_smart_max_leader_2_look)%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@max3]
+path_walk = max_leader_2_walk
+path_look = max_leader_2_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {=actor_enemy} %=actor_neutral%
+;on_info2 = {+rad_c4_teleport_of_max_squad_is_ready} walker@max4 %=teleport_npc(rad_c2_smart_max_leader_4_walk:rad_c2_smart_max_leader_4_look)%
+on_info2 = {+rad_c4_teleport_of_max_squad_is_ready} walker@max4
+
+[walker@max4]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = max_leader_4_walk
+path_look = max_leader_4_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = meet
+corpse_detection_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c4_1_actor_is_ready_to_kill} walker@max5 %=play_sound(b90_phrase_4_regroup_3)%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@max5]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = max_leader_5_walk
+path_look = max_leader_5_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c4_military_smart_squad !has_enemy} walker@max6 %+rad_c4_alarm_is_out%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@max6]
+path_walk = max_leader_3_walk
+path_look = max_leader_3_look
+meet = meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+combat_ignore_cond = true
+сombat_ignore = combat_ignore
+combat_ignore_keep_when_attacked = true
+on_info = {+rad_c4_task_done} animpoint@max
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[animpoint@max]
+cover_name = rad_c4_max_animpoint
+avail_animations = animpoint_sit_ass
+meet = meet
+
+[meet]
+close_snd_hello = nil
+close_snd_bye = nil
+close_anim 		= guard_na
+close_victim 	= actor
+far_anim 		= actor
+far_victim 		= actor
+close_distance  = 5
+far_distance 	= 5
+close_snd_distance = 5
+use = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} self, {+rad_c4_military_smart_squad +rad_c4_task_is_taken -rad_c4_task_done !check_alarm_status(rad_c2_smart)} true, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} self, false
+allow_break = false
+trade_enable = false
+meet_dialog = {+rad_c4_actor_is_ready_to_talk -rad_c4_start_moving} rad_c4_1_dialog, {+rad_c4_military_smart_squad +rad_c4_task_is_taken !check_alarm_status(rad_c2_smart)} rad_c4_dialog, {+rad_c2_actor_is_ready_to_talk =dist_to_actor_le(5) -rad_c4_dialog_done} rad_c2_dialog, nil
+
+;;;;;;;;;;;;;;;;;;;;;STALKER 1 WALKERS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[walker@stalker1_1]
+path_walk = stalker_1_walker_1_walk
+path_look = stalker_1_walker_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_military_squad_is_dead} walker@stalker1_2
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker1_2]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_1_walker_2_walk
+path_look = stalker_1_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_teleport_of_max_squad_is_ready} walker@stalker1_3 %=teleport_npc(rad_c2_smart_stalker_1_walker_2_walk:rad_c2_smart_stalker_1_walker_2_look)%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker1_3]
+path_walk = stalker_1_walker_2_walk
+path_look = stalker_1_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+;on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker1_4 %=teleport_npc(rad_c2_smart_stalker_1_walker_4_walk:rad_c2_smart_stalker_1_walker_4_look)%
+on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker1_4
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker1_4]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_1_walker_4_walk
+path_look = stalker_1_walker_4_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+on_info = {+rad_c4_start_moving} walker@stalker1_5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker1_5]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_1_walker_5_walk
+path_look = stalker_1_walker_5_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+on_info = {+rad_c4_task_done} animpoint@stalker1
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[animpoint@stalker1]
+cover_name = rad_c4_stalker_1_animpoint
+avail_animations = animpoint_sit_knee
+meet = meet
+
+;;;;;;;;;;;;;;;;;;;;;STALKER 2 WALKERS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[walker@stalker2_1]
+path_walk = stalker_2_walker_1_walk
+path_look = stalker_2_walker_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_military_squad_is_dead} walker@stalker2_2
+
+[walker@stalker2_2]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_2_walker_2_walk
+path_look = stalker_2_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_teleport_of_max_squad_is_ready} walker@stalker2_3 %=teleport_npc(rad_c2_smart_stalker_2_walker_2_walk:rad_c2_smart_stalker_2_walker_2_look)%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker2_3]
+path_walk = stalker_2_walker_2_walk
+path_look = stalker_2_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+;on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker2_4 %=teleport_npc(rad_c2_smart_stalker_2_walker_4_walk:rad_c2_smart_stalker_2_walker_4_look)%
+on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker2_4
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker2_4]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_2_walker_4_walk
+path_look = stalker_2_walker_4_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+on_info = {+rad_c4_start_moving} walker@stalker2_5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker2_5]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_2_walker_5_walk
+path_look = stalker_2_walker_5_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+on_info = {+rad_c4_task_done} animpoint@stalker2
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[animpoint@stalker2]
+cover_name = rad_c4_stalker_2_animpoint
+avail_animations = animpoint_sit_ass
+meet = meet
+
+;;;;;;;;;;;;;;;;;;;;;STALKER 3 WALKERS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[walker@stalker3_1]
+path_walk = stalker_3_walker_1_walk
+path_look = stalker_3_walker_1_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_military_squad_is_dead} walker@stalker3_2
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker3_2]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_3_walker_2_walk
+path_look = stalker_3_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c2_teleport_of_max_squad_is_ready} walker@stalker3_3 %=teleport_npc(rad_c2_smart_stalker_3_walker_2_walk:rad_c2_smart_stalker_3_walker_2_look)%
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker3_3]
+path_walk = stalker_3_walker_2_walk
+path_look = stalker_3_walker_2_look
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+;on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker3_4 %=teleport_npc(rad_c2_smart_stalker_3_walker_4_walk:rad_c2_smart_stalker_3_walker_4_look)%
+on_info = {+rad_c4_teleport_of_max_squad_is_ready} walker@stalker3_4
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker3_4]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_3_walker_4_walk
+path_look = stalker_3_walker_4_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+invulnerable = true
+on_info = {+rad_c4_start_moving} walker@stalker3_5
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker3_5]
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
+path_walk = stalker_3_walker_5_walk
+path_look = stalker_3_walker_5_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+on_info = {+rad_c4_task_done} walker@stalker3_6
+on_info2 = {=actor_enemy} %=actor_neutral%
+
+[walker@stalker3_6]
+path_walk = stalker_3_walker_6_walk
+path_look = stalker_3_walker_6_look
+combat_ignore_cond = {=fighting_dist_ge(40)} true, false
+meet = no_meet
+invulnerable = true
+corpse_detection_enabled = false
+gather_items_enabled = false
+use_camp = false
+
+[animpoint@stalker3]
+cover_name = rad_c4_stalker_3_animpoint
+avail_animations = animpoint_sit_ass
+meet = meet

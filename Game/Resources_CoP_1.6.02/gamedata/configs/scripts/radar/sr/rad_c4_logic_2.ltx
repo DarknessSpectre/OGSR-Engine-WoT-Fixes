@@ -1,0 +1,25 @@
+[logic]
+active = sr_idle@1
+
+[sr_idle@1]
+on_info = {+rad_c4_task_is_taken} sr_idle@2 %=disable_ui%
+
+[sr_idle@2]
+on_game_timer = 20 | sr_idle@3 %=run_postprocess(black:2001:true) =a3_hit_actor_start%
+
+[sr_idle@3]
+;SIMP: Почему то телепортация этих нпс не работает ни в какую, так что убрал её вообще
+;on_game_timer = 20 | sr_idle@4 %=teleport_actor(rad_c2_smart_max_leader_4_look:rad_c2_smart_max_leader_4_walk) +rad_c4_teleport_of_max_squad_is_ready =teleport_npc_by_story_id(rad_c2_max:rad_c2_smart_max_leader_4_look) =teleport_npc_by_story_id(rad_c2_stalker_1:rad_c2_smart_stalker_1_walker_4_look) =teleport_npc_by_story_id(rad_c2_stalker_2:rad_c2_smart_stalker_2_walker_4_look) =teleport_npc_by_story_id(rad_c2_stalker_3:rad_c2_smart_stalker_3_walker_4_look)%
+on_game_timer = 20 | sr_idle@4 %+rad_c4_teleport_of_max_squad_is_ready%
+;on_game_timer = 20 | sr_idle@4
+
+[sr_idle@4]
+on_game_timer = 30 | sr_idle@5 %=enable_ui =stop_postprocess(2001) =a3_hit_actor_finish +rad_c4_actor_is_ready_to_talk =remove_squad(rad_monolith_9_smart_squad) =remove_squad(rad_monolith_10_smart_squad) =remove_squad(rad_monolith_11_smart_squad) =remove_squad(rad_monolith_12_smart_squad) =remove_squad(rad_monolith_13_smart_squad) =remove_squad(rad_monolith_14_smart_squad) =create_squad(rad_c4_freedom_smart_squad:rad_c4_freedom_smart) =create_squad(rad_c4_military_smart_squad:rad_c4_military_smart)%
+
+[sr_idle@5]
+on_info = {+rad_c4_alarm_is_out} sr_idle@6 %=send_message(rad_c4_message:109:rad_max_name:8000:ui_inGame2_Freedom_4)%
+
+[sr_idle@6]
+on_game_timer = 30 | sr_idle@nil %+rad_c4_max_is_available_to_talk%
+
+[sr_idle@nil]
